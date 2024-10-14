@@ -1,4 +1,5 @@
 import Button from "./components/Atoms/button";
+import Text from "./components/Atoms/text";
 
 export default async function Home({ params }: { params: { lang: string } }) {
   const locale = params.lang || 'en-US';
@@ -11,6 +12,7 @@ export default async function Home({ params }: { params: { lang: string } }) {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <Button variant={"primary"} size={"sm"}>Click Me</Button>
+      <Text>Text</Text>
     </div>
   );
 }
