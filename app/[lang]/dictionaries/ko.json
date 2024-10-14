@@ -1,0 +1,115 @@
+{
+    "navbar": [
+        {
+            "logo": "Your Logo Name",
+            "link": "/#",
+            "icon": "/icons/logo"
+        },
+        {
+            "title": "채용",
+            "link": "/#",
+            "subLinks": [
+                {
+                    "title": "채용",
+                    "link": "/#"
+                },
+                {
+                    "title": "해외 개발자 원격 채용",
+                    "link": "/#"
+                },
+                {
+                    "title": "외국인 원격 채용 (비개발 직군)",
+                    "link": "/#"
+                },
+                {
+                    "title": "한국어 가능 외국인 채용",
+                    "link": "/#"
+                }
+            ]
+        },
+        {
+            "title": "해외 개발자 활용 서비스",
+            "link": "/#"
+        },
+        {
+            "title": "문의하기",
+            "link": "/#",
+            "isButton": true
+        }
+    ],
+    "left_content": [
+        {
+            "job_description": {
+                "job_type": "풀타임, 파트타임",
+                "question": "최고의 실력을 가진 외국인 인재를 찾고 계신가요?",
+                "description": "법률 및 인사관리 부담없이 1주일 이내에 원격으로 채용해보세요."
+            },
+            "developer_section": {
+                "question": "개발자가 필요하신가요?"
+            },
+            "salary": {
+                "average": "평균 월 120만원",
+                "note": "임금을 해당 국가를 기준으로 계산합니다."
+            },
+            "replacement_policy": {
+                "maximum_replacements": "최대 3회 인력교체",
+                "note": "막상 채용해보니 맞지 않아도 걱정하지 마세요. "
+            },
+            "working_hours": {
+                "maximum_hours": "평균 3일, 최대 10일",
+                "details": "급하게 사람이 필요한 경우에도 빠른 채용이 가능합니다."
+            },
+            "slide_items": [
+                {
+                    "icon": "/icons/logo",
+                    "title": "해외 마케팅"
+                },
+                {
+                    "icon": "/icons/logo",
+                    "title": "퍼블리셔"
+                },
+                {
+                    "icon": "/icons/logo",
+                    "title": "캐드원(제도사)"
+                },
+                {
+                    "icon": "/icons/logo",
+                    "title": "해외 세일즈"
+                },
+                {
+                    "icon": "/icons/logo",
+                    "title": "해외 CS"
+                }
+            ]
+        }
+    ],
+    "right_content": [
+        {
+            "image": "/icons/logo",
+            "title": "Abhishek Gupta",
+            "sub_title": "마케팅 · 2y+",
+            "description_title": "마케팅 콘텐츠 제작",
+            "description_subtitle": "인스타그램 관리",
+            "detail_1": "트위터 관리",
+            "detail_2": "블로그 글 작성"
+        },
+        {
+            "image": "/icons/logo",
+            "title": "Abhishek Gupta",
+            "sub_title": "마케팅 · 2y+",
+            "description_title": "마케팅 콘텐츠 제작",
+            "description_subtitle": "인스타그램 관리",
+            "detail_1": "트위터 관리",
+            "detail_2": "블로그 글 작성"
+        },
+        {
+            "image": "/icons/logo",
+            "title": "Abhishek Gupta",
+            "sub_title": "마케팅 · 2y+",
+            "description_title": "마케팅 콘텐츠 제작",
+            "description_subtitle": "인스타그램 관리",
+            "detail_1": "트위터 관리",
+            "detail_2": "블로그 글 작성"
+        }
+    ]
+}

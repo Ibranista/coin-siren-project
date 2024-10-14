@@ -1,0 +1,115 @@
+{
+    "navbar": [
+        {
+            "logo": "Your Logo Name",
+            "link": "/#",
+            "icon": "/icons/logo"
+        },
+        {
+            "title": "Recruitment",
+            "link": "/#",
+            "subLinks": [
+                {
+                    "title": "Recruitment",
+                    "link": "/#"
+                },
+                {
+                    "title": "Remote Hiring of Overseas Developers",
+                    "link": "/#"
+                },
+                {
+                    "title": "Remote Hiring for Non-Development Roles (Foreigners)",
+                    "link": "/#"
+                },
+                {
+                    "title": "Hiring Foreigners Who Speak Korean",
+                    "link": "/#"
+                }
+            ]
+        },
+        {
+            "title": "Overseas Developer Utilization Service",
+            "link": "/#"
+        },
+        {
+            "title": "Contact Us",
+            "link": "/#",
+            "isButton": true
+        }
+    ],
+    "left_content": [
+        {
+            "job_description": {
+                "job_type": "Full-time, Part-time",
+                "question": "Are you looking for top foreign talent?",
+                "description": "Hire remotely within a week without the burden of legal and HR management."
+            },
+            "developer_section": {
+                "question": "Do you need a developer?"
+            },
+            "salary": {
+                "average": "Average monthly salary: 1.2 million KRW",
+                "note": "The salary is calculated based on the country's standard."
+            },
+            "replacement_policy": {
+                "maximum_replacements": "Up to 3 replacements",
+                "note": "Don't worry if the hire doesn't work out. We've got you covered."
+            },
+            "working_hours": {
+                "maximum_hours": "Average 3 days, up to 10 days",
+                "details": "Quick hiring is available even when you need someone urgently."
+            },
+            "slide_items": [
+                {
+                    "icon": "/icons/logo",
+                    "title": "Overseas Marketing"
+                },
+                {
+                    "icon": "/icons/logo",
+                    "title": "Publisher"
+                },
+                {
+                    "icon": "/icons/logo",
+                    "title": "CAD Operator"
+                },
+                {
+                    "icon": "/icons/logo",
+                    "title": "Overseas Sales"
+                },
+                {
+                    "icon": "/icons/logo",
+                    "title": "Overseas Customer Service"
+                }
+            ]
+        }
+    ],
+    "right_content": [
+        {
+            "image": "/icons/logo",
+            "title": "Abhishek Gupta",
+            "sub_title": "Marketing · 2+ years",
+            "description_title": "Marketing Content Creation",
+            "description_subtitle": "Instagram Management",
+            "detail_1": "Twitter Management",
+            "detail_2": "Blog Writing"
+        },
+        {
+            "image": "/icons/logo",
+            "title": "Abhishek Gupta",
+            "sub_title": "Marketing · 2+ years",
+            "description_title": "Marketing Content Creation",
+            "description_subtitle": "Instagram Management",
+            "detail_1": "Twitter Management",
+            "detail_2": "Blog Writing"
+        },
+        {
+            "image": "/icons/logo",
+            "title": "Abhishek Gupta",
+            "sub_title": "Marketing · 2+ years",
+            "description_title": "Marketing Content Creation",
+            "description_subtitle": "Instagram Management",
+            "detail_1": "Twitter Management",
+            "detail_2": "Blog Writing"
+        }
+    ]
+}
