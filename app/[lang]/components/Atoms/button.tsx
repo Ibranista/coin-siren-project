@@ -14,7 +14,7 @@ const buttonVariants = cva("rounded-md", {
         },
         size: {
             sm: "px-4 py-2 text-base font-black",
-            md: "py-6 px-[6px]",
+            md: "px-6 py-[6px] h-9 box-border",
             lg: "px-8 py-4 text-lg",
         }
     },

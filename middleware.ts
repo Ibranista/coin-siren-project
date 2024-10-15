@@ -2,7 +2,6 @@ import { match } from '@formatjs/intl-localematcher';
 import Negotiator from 'negotiator';
 import { defaultLocale } from './constants/locals';
 import { i18n } from './i18n-config';
-
 import { NextResponse } from 'next/server';
 
 export function middleware(request: any) {
@@ -11,6 +10,11 @@ export function middleware(request: any) {
   // Skip API routes from being locale-prefixed
   if (pathname.startsWith('/api')) {
     return; // Let the API routes pass without redirect
+  }
+
+  // Allow static files to pass through without redirection
+  if (pathname.startsWith('/_next/') || pathname.startsWith('/favicon.ico') || pathname.startsWith('/logo.png')) {
+    return; // Skip locale prefixing for Next.js assets and static files
   }
 
   // Check if the pathname already includes a supported locale
@@ -33,6 +37,6 @@ export function middleware(request: any) {
 export const config = {
   matcher: [
     // Skip all internal paths (_next)
-    '/((?!_next|api).*)', // Exclude _next and api paths
+    '/((?!_next|api|favicon.ico).*)',
   ],
 };

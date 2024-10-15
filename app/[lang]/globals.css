@@ -25,3 +25,11 @@ body {
     text-wrap: balance;
   }
 } */
+
+.hum_btn_wrapper {
+  @apply flex flex-col justify-center items-center lg:hidden;
+}
+
+.hum_lines {
+  @apply bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm;
+}
