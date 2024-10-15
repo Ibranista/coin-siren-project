@@ -2,8 +2,13 @@
 
 import { useState } from "react";
 
-export default function HumButton() {
-    const [toggled, setToggled] = useState(false);
+export default function HumButton({
+    toggled,
+    setToggled
+}: {
+    toggled: boolean,
+    setToggled: (toggled: boolean) => void
+}) {
     return (
         <button onClick={() => setToggled(!toggled)}
             className="hum_btn_wrapper">

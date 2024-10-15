@@ -27,9 +27,17 @@ body {
 } */
 
 .hum_btn_wrapper {
-  @apply flex flex-col justify-center items-center lg:hidden;
+  @apply flex flex-col justify-center items-center md:hidden;
 }
 
 .hum_lines {
   @apply bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm;
+}
+
+/* media max 768px */
+@media (max-width: 768px) {
+  .sidebar {
+    @apply absolute  duration-300 ease-in-out
+  bg-primary_blue top-[60px] max-lg:h-[calc(100vh-60px)] w-full max-w-[70%] flex-col max-md:gap-4 max-md:px-4 py-4;
+  }
 }
