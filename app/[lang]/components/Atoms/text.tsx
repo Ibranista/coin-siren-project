@@ -16,6 +16,7 @@ const textVariants = cva("text-primary", {
         },
         size: {
             sm: "text-sm",
+            mdx: "text-lg leading-[150%] max-md:text-2xl",
             md: "font-black text-base leading-[150%]",
             lg: "text-5xl lg:text-4xl",
         }
