@@ -42,6 +42,21 @@ export default async function Home({ params }: { params: { lang: string } }) {
               <Text className="text-lg underline">개발자가 필요하신가요?</Text>
             </article>
           </section>
+          {/* three rows that are hidden on mobile */}
+          <section className="three-rows grid grid-cols-3 gap-x-12 gap-y-2 pl-4 max-md:hidden mt-[60px] md:width-[579px] lg:flex-wrap">
+            <article className="row_card max-w[161px] relative flex flex-col gap-2">
+              <Text size={"mdx"} className="font-black custom_border pt-2">평균 월 120만원</Text>
+              <Text size={"md"} className="font-black">임금을 해당 국가를 기준으로 계산합니다.</Text>
+            </article>
+            <article className="row_card max-w[161px] relative flex flex-col gap-2">
+              <Text size={"mdx"} className="font-black custom_border pt-2">최대 3회 인력교체</Text>
+              <Text size={"md"} className="font-black">막상 채용해보니 맞지 않아도 걱정하지 마세요.</Text>
+            </article>
+            <article className="row_card max-w[161px] relative flex flex-col gap-2">
+              <Text size={"mdx"} className="font-black custom_border pt-2">평균 3일, 최대 10일</Text>
+              <Text size={"md"} className="font-black">급하게 사람이 필요한 경우에도 빠른 채용이 가능합니다.</Text>
+            </article>
+          </section>
         </section>
 
         {/* slider section */}
@@ -49,7 +64,7 @@ export default async function Home({ params }: { params: { lang: string } }) {
           <CardSlider />
         </div>
         {/* checkbox section for small screens */}
-        <section className="check_boxes_wrapper flex px-4 flex-wrap gap-x-2 gap-y-8">
+        <section className="check_boxes_wrapper flex px-4 flex-wrap gap-x-2 gap-y-8 md:hidden">
           <div className="flex gap-3 items-center min-w-[109px]">
             <Image src="/checkbox.png" unoptimized width={20} height={20} alt="checkbox-icon" />
             <Text>한국어 능력</Text>

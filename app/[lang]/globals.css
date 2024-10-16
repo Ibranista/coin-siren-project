@@ -41,3 +41,14 @@ body {
   bg-primary_blue top-[60px] max-lg:h-[calc(100vh-60px)] w-full max-w-[70%] flex-col max-md:gap-4 max-md:px-4 py-4;
   }
 }
+/* three rows */
+
+.custom_border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 129px;
+  height: 2px;
+  background-color: white;
+}
