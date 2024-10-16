@@ -13,7 +13,12 @@ export function middleware(request: any) {
   }
 
   // Allow static files to pass through without redirection
-  if (pathname.startsWith('/_next/') || pathname.startsWith('/favicon.ico') || pathname.startsWith('/logo.png')) {
+  if (
+    pathname.startsWith('/_next/') ||
+    pathname.startsWith('/favicon.ico') ||
+    pathname.startsWith('/logo.png') ||
+    pathname.endsWith('.png')
+  ) {
     return; // Skip locale prefixing for Next.js assets and static files
   }
 

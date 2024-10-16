@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button from "./components/Atoms/button";
 import Text from "./components/Atoms/text";
 import CardSlider from "./components/Molecules/slider";
@@ -44,7 +45,28 @@ export default async function Home({ params }: { params: { lang: string } }) {
         </section>
 
         {/* slider section */}
-        <CardSlider />
+        <div className="card_slider_wrapper">
+          <CardSlider />
+        </div>
+        {/* checkbox section for small screens */}
+        <section className="check_boxes_wrapper flex px-4 flex-wrap gap-x-2 gap-y-8">
+          <div className="flex gap-3 items-center min-w-[109px]">
+            <Image src="/checkbox.png" unoptimized width={20} height={20} alt="checkbox-icon" />
+            <Text>한국어 능력</Text>
+          </div>
+          <div className="flex gap-3 items-center min-w-[109px]">
+            <Image src="/checkbox.png" unoptimized width={20} height={20} alt="checkbox-icon" />
+            <Text>업무 수행 능력</Text>
+          </div>
+          <div className="flex gap-3 items-center min-w-[109px]">
+            <Image src="/checkbox.png" unoptimized width={20} height={20} alt="checkbox-icon" />
+            <Text>겸업 여부</Text>
+          </div>
+          <div className="flex gap-3 items-center min-w-[109px]">
+            <Image src="/checkbox.png" unoptimized width={20} height={20} alt="checkbox-icon" />
+            <Text>평판 조회</Text>
+          </div>
+        </section>
       </article>
     </main>
   );

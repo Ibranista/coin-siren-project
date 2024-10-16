@@ -19,8 +19,8 @@ const CardSlider = () => {
     };
 
     return (
-        <div className="bg-orange-200 w-full mx-auto carousel-container h-[500px] flex flex-col items-center relative">
-            <div className="carousel overflow-hidden mx-auto mt-11 flex justify-center relative w-full max-w-[900px] h-full">
+        <div className="bg-orange-200 w-full mx-auto carousel-container h-[500px] max-md:h-[350px] flex flex-col items-center relative">
+            <div className="carousel overflow-hidden mx-auto mt-11 max-md:mt-3 flex justify-center relative w-full max-w-[900px] h-full">
                 {/* Sliding Items */}
                 {items.map((item, index) => {
                     const isActive = index === currentIdx;
