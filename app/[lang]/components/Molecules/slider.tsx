@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Text from "../Atoms/text";
 import Image from "next/image";
+import CardBox from "../Atoms/cardBox";
 
 const CardSlider = () => {
     const [currentIdx, setCurrentIdx] = useState(1);
@@ -50,7 +51,7 @@ const CardSlider = () => {
                                         : "opacity-0 pointer-events-none"
                                 }`}
                         >
-                            <article className="item-content h-full flex justify-center flex-col items-center bg-white p-6 rounded-lg shadow-lg">
+                            <CardBox className="item-content h-full flex justify-center flex-col items-center" variant={"secondary"}>
                                 <div className="top_slider_card_section flex justify-center items-center flex-col">
                                     <div className="image_wrapper relative w-[120px] height=[120px] max-md:w-[64px] max-md:h-[64px]">
                                         <Image src="/lady_on_slider.png" width={120} height={120} className="max-md:w-[64px]" alt="girl image" />
@@ -75,7 +76,7 @@ const CardSlider = () => {
                                         </article>
                                     </section>
                                 </div>
-                            </article>
+                            </CardBox>
                         </section>
                     );
                 })}

@@ -4,7 +4,7 @@ export default function Middlegrid2() {
     return (
         <section className="middle_section mt-[60px] px-4 max-w-[1201.5px] mx-auto md:flex md:gap-x-[42px]">
 
-            <article className="logo_phone_email_wrapper flex flex-col gap-y-[5px] max-w-[306px] w-full">
+            <article className="logo_phone_email_wrapper flex flex-col gap-y-[5px] max-w-[306px]  max-md:max-w-full w-full">
                 <div className="name_detail_wrapper flex justify-between">
                     <Text className="leading-[150%] text-[12px] font-black" variant={"md_dark"}>상호명</Text>
                     <Text className="leading-[150%] font-black text-[13px] min-w-[82px] text-left" variant={"md_dark"}>대표 CEO</Text>

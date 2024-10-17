@@ -5,20 +5,17 @@ import { poppins } from "@/app/util/fonts";
 
 export default function CardBox({ children, className, variant, size, ...props }: IBoxProps & VariantProps<typeof boxVariants>) {
     return (
-        <div className={`${cn(boxVariants({ variant, size, className }))} ${poppins.className}`} {...props}>
+        <article className={`${cn(boxVariants({ variant, size, className }))} ${poppins.className}`} {...props}>
             {children}
-        </div>
+        </article>
     )
 }
 
 const boxVariants = cva("box-primary", {
     variants: {
         variant: {
-            primary: "bg-white rounded-md",
-            secondary: "text-lighter_black",
-            tertiary: "text-primary_black",
-            md_dark: "text-[#343741]",
-            lightest_dark: "text-lightest_black"
+            primary: "bg-white rounded-md shadow-sm",
+            secondary: "bg-white rounded-lg shadow-lg p-6",
         },
         size: {
             sm: "text-sm",
