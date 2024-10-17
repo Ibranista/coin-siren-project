@@ -19,6 +19,7 @@ const config: Config = {
         primary_black: '#1D1E26',
         lighter_black: '#344054',
         lightest_black: '#5E626F',
+        slight_light: '#fbfbfb'
       },
     },
   },

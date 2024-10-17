@@ -12,7 +12,9 @@ const textVariants = cva("text-primary", {
         variant: {
             primary: "text-white",
             secondary: "text-lighter_black",
-            tertiary: "text-primary_black"
+            tertiary: "text-primary_black",
+            md_dark: "text-[#343741]",
+            lightest_dark: "text-lightest_black"
         },
         size: {
             sm: "text-sm",

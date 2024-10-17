@@ -1,3 +1,7 @@
+import Image from "next/image";
+import Text from "./components/Atoms/text";
+import Middlegrid from "./components/Molecules/middlegrid";
+import Middlegrid2 from "./components/Molecules/middlegrid2";
 
 export default async function Home({ params }: { params: { lang: string } }) {
   const locale = params.lang || 'en-US';
@@ -9,7 +13,9 @@ export default async function Home({ params }: { params: { lang: string } }) {
   console.log('the data==>', data)
   return (
     <main>
-      
+      <Middlegrid />
+
+      <Middlegrid2 />
     </main>
   );
 }
