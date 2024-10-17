@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Button from "./components/Atoms/button";
 import Text from "./components/Atoms/text";
 import CardSlider from "./components/Molecules/slider";
+import InfiniteSlider from "./components/Molecules/infiniteslide";
 
 export default async function Home({ params }: { params: { lang: string } }) {
   const locale = params.lang || 'en-US';
@@ -83,6 +83,10 @@ export default async function Home({ params }: { params: { lang: string } }) {
           </div>
         </section>
       </article>
+      {/* slider for larger screen only */}
+      <div className="slider_container">
+        <InfiniteSlider />
+      </div>
     </main>
   );
 }

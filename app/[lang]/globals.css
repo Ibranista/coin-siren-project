@@ -52,3 +52,11 @@ body {
   height: 2px;
   background-color: white;
 }
+
+.slick-list {
+  padding: 0 50% 0 0 !important;
+}
+
+.slick-slide {
+  margin-right: 8px !important;
+}
