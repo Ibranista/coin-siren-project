@@ -1,9 +1,9 @@
-import { ButtonHTMLAttributes, ReactNode } from 'react';
+import { ButtonHTMLAttributes, HTMLAttributes, ReactNode } from 'react';
 
-export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  children: ReactNode;
-}
+interface IBaseProps<T> extends HTMLAttributes<T> {}
 
-export interface ITextProps extends ButtonHTMLAttributes<HTMLParagraphElement> {
-  children: ReactNode;
-}
+export interface IButtonProps extends IBaseProps<HTMLButtonElement>, ButtonHTMLAttributes<HTMLButtonElement> {}
+
+export interface ITextProps extends IBaseProps<HTMLParagraphElement>, ButtonHTMLAttributes<HTMLParagraphElement> {}
+
+export interface IBoxProps extends IBaseProps<HTMLDivElement>, ButtonHTMLAttributes<HTMLDivElement> {}

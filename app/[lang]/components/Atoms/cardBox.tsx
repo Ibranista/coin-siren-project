@@ -1,16 +1,20 @@
-import { ITextProps } from "@/app/interface/interface";
+import { IBoxProps } from "@/app/interface/interface";
 import { cva, VariantProps } from "class-variance-authority";
 import cn from "@/app/util/cn";
 import { poppins } from "@/app/util/fonts";
 
-export default function Text({ children, className, variant, size, ...props }: ITextProps & VariantProps<typeof textVariants>) {
-    return <p className={`${cn(textVariants({ variant, size, className }))} ${poppins.className}`} {...props}>{children}</p>
+export default function CardBox({ children, className, variant, size, ...props }: IBoxProps & VariantProps<typeof boxVariants>) {
+    return (
+        <div className={`${cn(boxVariants({ variant, size, className }))} ${poppins.className}`} {...props}>
+            {children}
+        </div>
+    )
 }
 
-const textVariants = cva("text-primary", {
+const boxVariants = cva("box-primary", {
     variants: {
         variant: {
-            primary: "text-white",
+            primary: "bg-white rounded-md",
             secondary: "text-lighter_black",
             tertiary: "text-primary_black",
             md_dark: "text-[#343741]",
@@ -18,8 +22,7 @@ const textVariants = cva("text-primary", {
         },
         size: {
             sm: "text-sm",
-            mdx: "text-lg leading-[150%] max-md:text-2xl",
-            md: "font-black text-base leading-[150%]",
+            md: "w-60 px-4",
             lg: "text-5xl max-md:text-4xl",
         }
     },

@@ -25,7 +25,7 @@ export default function HeroJumbotron() {
                         {/* sub-title */}
                         <article className="animate-fadeInUp">
                             <Text size={"lg"} className="leading-[130%]">최고의 실력을 가진</Text>
-                            <Text size={"lg"} className="leading-[130%] text-nowrap">외국인 인재를 찾고 계신가요?</Text>
+                            <Text size={"lg"} className="leading-[130%] md:text-nowrap">외국인 인재를 찾고 계신가요?</Text>
                         </article>
                         {/* second-subtitle */}
                         <article className="animate-fadeInUp max-w-[361px]">

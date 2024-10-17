@@ -21,7 +21,7 @@ const CardSlider = () => {
     };
 
     return (
-        <section className="w-full mx-auto carousel-container h-[500px] max-md:h-[350px] flex flex-col items-center relative">
+        <section className="w-full mx-auto carousel-container h-[500px] max-md:h-[468px] flex flex-col items-center relative max-md:mt-9">
             <article className="min-w-[150px] py-[6px] mt-2 animate-fadeInDelayed">
                 <section className="relative inline-block bg-nephritis text-black text-lg font-semibold px-4 py-2 rounded-lg box-content">
                     <div className="flex gap-[0.5px]">
@@ -31,7 +31,7 @@ const CardSlider = () => {
                     <div className="absolute w-3 h-3 bg-nephritis rotate-45 top-[38px] left-[50%]"></div>
                 </section>
             </article>
-            <div className="carousel overflow-hidden mx-auto mt-5 max-md:mt-3 flex justify-center relative w-full max-w-[900px] h-full animate-fadeIn">
+            <div className="carousel overflow-hidden mx-auto mt-5 max-md:mt-5 flex justify-center relative w-full max-w-[900px] h-full animate-fadeIn">
                 {/* Sliding Items */}
                 {items.map((item, index) => {
                     const isActive = index === currentIdx;
@@ -52,8 +52,8 @@ const CardSlider = () => {
                         >
                             <article className="item-content h-full flex justify-center flex-col items-center bg-white p-6 rounded-lg shadow-lg">
                                 <div className="top_slider_card_section flex justify-center items-center flex-col">
-                                    <div className="image_wrapper relative w-[120px] height=[120px]">
-                                        <Image src="/lady_on_slider.png" width={120} height={120} alt="girl image" />
+                                    <div className="image_wrapper relative w-[120px] height=[120px] max-md:w-[64px] max-md:h-[64px]">
+                                        <Image src="/lady_on_slider.png" width={120} height={120} className="max-md:w-[64px]" alt="girl image" />
                                         <Image src="/flag_icon.png" width={25} height={18} alt="flag icon" className="absolute bottom-0 right-0" />
                                     </div>
                                     <Text className="leading-[150%] font-black text-[#24252f] mt-2 text-2xl max-md:text-lg">Abhishek Gupts</Text>
