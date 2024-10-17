@@ -24,14 +24,15 @@ export default function HeroJumbotron() {
                         </article>
                         {/* sub-title */}
                         <article className="animate-fadeInUp">
-                            <Text size={"lg"} className="leading-[130%]">최고의 실력을 가진 외국인 인재를 찾고 계신가요?</Text>
+                            <Text size={"lg"} className="leading-[130%]">최고의 실력을 가진</Text>
+                            <Text size={"lg"} className="leading-[130%] text-nowrap">외국인 인재를 찾고 계신가요?</Text>
                         </article>
                         {/* second-subtitle */}
-                        <article className="animate-fadeInUp">
-                            <Text size="mdx">법률 및 인사관리 부담없이 1주일 이내에 원격으로 채용해보세요.</Text>
+                        <article className="animate-fadeInUp max-w-[361px]">
+                            <Text size="mdx" className="md:text-2xl leading-[34px] font-black">법률 및 인사관리 부담없이 1주일 이내에 원격으로 채용해보세요.</Text>
                         </article>
                         {/* third subtitle */}
-                        <article className="max-md:hidden mt-2 animate-fadeInUp">
+                        <article className="max-md:hidden mt-[24px] max-md:mt-2 animate-fadeInUp">
                             <Text className="text-lg underline">개발자가 필요하신가요?</Text>
                         </article>
                     </section>
@@ -81,7 +82,7 @@ export default function HeroJumbotron() {
                 </article>
             </article>
             {/* slider for larger screen only */}
-            <div className="slider_container">
+            <div className="slider_container mt-[60px]">
                 <InfiniteSlider />
             </div>
         </>

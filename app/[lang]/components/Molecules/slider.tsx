@@ -31,7 +31,7 @@ const CardSlider = () => {
                     <div className="absolute w-3 h-3 bg-nephritis rotate-45 top-[38px] left-[50%]"></div>
                 </section>
             </article>
-            <div className="carousel overflow-hidden mx-auto mt-5 max-md:mt-3 flex justify-center relative w-full max-w-[900px] h-full">
+            <div className="carousel overflow-hidden mx-auto mt-5 max-md:mt-3 flex justify-center relative w-full max-w-[900px] h-full animate-fadeIn">
                 {/* Sliding Items */}
                 {items.map((item, index) => {
                     const isActive = index === currentIdx;
