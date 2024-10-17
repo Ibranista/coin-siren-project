@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from "react";
+import Text from "../Atoms/text";
+import Image from "next/image";
 
 const CardSlider = () => {
     const [currentIdx, setCurrentIdx] = useState(1);
@@ -19,8 +21,17 @@ const CardSlider = () => {
     };
 
     return (
-        <div className="bg-orange-200 w-full mx-auto carousel-container h-[500px] max-md:h-[350px] flex flex-col items-center relative">
-            <div className="carousel overflow-hidden mx-auto mt-11 max-md:mt-3 flex justify-center relative w-full max-w-[900px] h-full">
+        <section className="bg-orange-200 w-full mx-auto carousel-container h-[500px] max-md:h-[350px] flex flex-col items-center relative">
+            <article className="min-w-[150px] py-[6px] mt-2 animate-fadeInDelayed">
+                <section className="relative inline-block bg-nephritis text-black text-lg font-semibold px-4 py-2 rounded-lg box-content">
+                    <div className="flex gap-[0.5px]">
+                        <Image src="/dollar_icon.png" width={26} height={26} alt="dollar icon" />
+                        <Text className="text-lg mr-[0.5px] font-black text-primary_green" size={"mdx"}> 월 100만원 </Text>
+                    </div>
+                    <div className="absolute w-3 h-3 bg-nephritis rotate-45 top-[38px] left-[50%]"></div>
+                </section>
+            </article>
+            <div className="carousel overflow-hidden mx-auto mt-5 max-md:mt-3 flex justify-center relative w-full max-w-[900px] h-full">
                 {/* Sliding Items */}
                 {items.map((item, index) => {
                     const isActive = index === currentIdx;
@@ -58,7 +69,7 @@ const CardSlider = () => {
                     chevron_right
                 </span>
             </div>
-        </div>
+        </section>
     );
 };
 

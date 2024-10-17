@@ -8,6 +8,26 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        fadeInDelayed: {
+          '0%': { opacity: '0' },
+          '62.5%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
+      animation: {
+        fadeInUp: 'fadeInUp 500ms ease-out forwards',
+        fadeIn: 'fadeIn 500ms ease-out forwards',
+        fadeInDelayed: 'fadeInDelayed 800ms ease-out forwards',
+      },
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
@@ -19,7 +39,7 @@ const config: Config = {
         primary_black: '#1D1E26',
         lighter_black: '#344054',
         lightest_black: '#5E626F',
-        slight_light: '#fbfbfb'
+        slight_light: '#fbfbfb',
       },
     },
   },

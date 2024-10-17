@@ -22,31 +22,31 @@ export default function InfiniteSlider() {
             <div className="slider-container">
                 <Slider {...settings2}>
                     <div className="bg-white bg-opacity-[20%] rounded-md mr-2" style={{ width: 332 }}>
-                        <article className="slider_card flex box-border gap-x-[10px] p-4 items-center">
+                        <article className="slider_card flex box-border gap-x-[10px] p-4 items-center animate-fadeIn">
                             <Image src="/frame1.png" width={36} height={56} alt="frame for slide" className="rounded-sm" />
                             <Text size={"mdx"}>해외 마케팅</Text>
                         </article>
                     </div>
                     <div className="bg-white bg-opacity-[20%] rounded-md mr-2" style={{ width: 332 }}>
-                        <article className="slider_card flex box-border gap-x-[10px] p-4 items-center">
+                        <article className="slider_card flex box-border gap-x-[10px] p-4 items-center animate-fadeIn">
                             <Image src="/frame1.png" width={36} height={56} alt="frame for slide" className="rounded-sm" />
                             <Text size={"mdx"}>해외 마케팅</Text>
                         </article>
                     </div>
                     <div className="bg-white bg-opacity-[20%] rounded-md mr-2" style={{ width: 332 }}>
-                        <article className="slider_card flex box-border gap-x-[10px] p-4 items-center">
+                        <article className="slider_card flex box-border gap-x-[10px] p-4 items-center animate-fadeIn">
                             <Image src="/frame1.png" width={36} height={56} alt="frame for slide" className="rounded-sm" />
                             <Text size={"mdx"}>해외 마케팅</Text>
                         </article>
                     </div>
                     <div className="bg-white bg-opacity-[20%] rounded-md mr-2" style={{ width: 332 }}>
-                        <article className="slider_card flex box-border gap-x-[10px] p-4 items-center">
+                        <article className="slider_card flex box-border gap-x-[10px] p-4 items-center animate-fadeIn">
                             <Image src="/frame1.png" width={36} height={56} alt="frame for slide" className="rounded-sm" />
                             <Text size={"mdx"}>해외 마케팅</Text>
                         </article>
                     </div>
                     <div className="bg-white bg-opacity-[20%] rounded-md mr-2" style={{ width: 332 }}>
-                        <article className="slider_card flex box-border gap-x-[10px] p-4 items-center">
+                        <article className="slider_card flex box-border gap-x-[10px] p-4 items-center animate-fadeIn">
                             <Image src="/frame1.png" width={36} height={56} alt="frame for slide" className="rounded-sm" />
                             <Text size={"mdx"}>해외 마케팅</Text>
                         </article>
