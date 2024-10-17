@@ -19,25 +19,25 @@ export default function Middlegrid() {
                 <div className="grid grid-cols-2 md:grid-cols-2 max-[340px]:grid-cols-1 lg:grid-cols-4 gap-4 md:gap-x-[15px]">
 
                     <div className="bg-white min-w-[160px] md:w-[187px] rounded-lg p-4 flex flex-col items-start justify-between">
-                        <div className="w-12 h-12 bg-gray-200 rounded-full mb-4"></div>
+                        <Image src="/codeicon.png" width={40} height={40} alt="code tag icon" className="mb-3" />
                         <Text size={"sm"} className="leading-[150%] font-black" variant={"md_dark"}>해외 개발자 원격 채용</Text>
                         <Text className="mt-4 flex items-center text-lightest_black">바로가기 <Image src="/arrow_right_square.png" className="ml-2" alt="arrow right icon" height={17} width={17} /></Text>
                     </div>
 
                     <div className="bg-white min-w-[160px] md:w-[187px] rounded-lg p-4 flex flex-col items-start justify-between">
-                        <div className="w-12 h-12 bg-gray-200 rounded-full mb-4"></div>
+                        <Image src="/person_icon.png" width={40} height={40} alt="code tag icon" className="mb-3" />
                         <Text size={"sm"} className="leading-[150%] font-black" variant={"md_dark"}>외국인 원격 채용 (비거랄)</Text>
                         <Text className="mt-4 flex items-center text-lightest_black">바로가기 <Image src="/arrow_right_square.png" className="ml-2" alt="arrow right icon" height={17} width={17} /></Text>
                     </div>
 
                     <div className="bg-white min-w-[160px] md:w-[187px] rounded-lg p-4 flex flex-col items-start justify-between">
-                        <div className="w-12 h-12 bg-gray-200 rounded-full mb-4"></div>
+                        <Image src="/kor_icon.png" width={40} height={40} alt="code tag icon" className="mb-3" />
                         <Text size={"sm"} className="leading-[150%] font-black" variant={"md_dark"}>한국어 가능한 외국인 채용</Text>
                         <Text className="mt-4 flex items-center text-lightest_black">바로가기 <Image src="/arrow_right_square.png" className="ml-2" alt="arrow right icon" height={17} width={17} /></Text>
                     </div>
 
                     <div className="bg-white min-w-[160px] md:w-[187px] rounded-lg p-4 flex flex-col items-start justify-between">
-                        <div className="w-12 h-12 bg-gray-200 rounded-full mb-4"></div>
+                        <Image src="/setting_icon.png" width={40} height={40} alt="code tag icon" className="mb-3" />
                         <Text size={"sm"} className="leading-[150%] font-black" variant={"md_dark"}>해외 개발자 활용 서비스</Text>
                         <Text className="mt-4 flex items-center text-lightest_black">바로가기 <Image src="/arrow_right_square.png" className="ml-2" alt="arrow right icon" height={17} width={17} /></Text>
                     </div>

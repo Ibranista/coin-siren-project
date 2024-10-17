@@ -34,14 +34,16 @@ export default function Navbar() {
             ${!toggled ? " left-0" : "-left-full"}
             `}>
                     <li className="list-none flex gap-2 items-center relative group cursor-pointer">
-                        <Text>Text</Text>
+                        <Text>채용</Text>
                         <span className="material-symbols-outlined text-white">
                             keyboard_arrow_down
                         </span>
 
                         <div className="absolute top-full left-0 hidden group-hover:flex flex-col bg-white rounded-md shadow-md w-60 px-4">
-                            <Link href={"#"} className="py-[10px]"><Text variant={"secondary"} size={"sm"}>Hello</Text></Link>
-                            <Link href={"#"} className="py-[10px]"><Text variant={"secondary"} size={"sm"}>Hello</Text></Link>
+                            <Link href={"#"} className="py-[10px]"><Text variant={"secondary"} size={"sm"} className="font-bold">채용</Text></Link>
+                            <Link href={"#"} className="py-[10px]"><Text variant={"secondary"} size={"sm"}>해외 개발자 원격 채용</Text></Link>
+                            <Link href={"#"} className="py-[10px]"><Text variant={"secondary"} size={"sm"}>해외 개발자 원격 채용</Text></Link>
+                            <Link href={"#"} className="py-[10px]"><Text variant={"secondary"} size={"sm"}>한국어 가능 외국인 채용</Text></Link>
                         </div>
                     </li>
                     <div className="accordion md:hidden">
@@ -67,13 +69,13 @@ export default function Navbar() {
                         ))}
                     </div>
                     <li className="list-none">
-                        <Text>Text</Text>
+                        <Text>해외 개발자 활용 서비스</Text>
                     </li>
                     <li className="list-none">
-                        <Button className="md:hidden">Button</Button>
+                        <Button className="md:hidden">문의하기</Button>
                     </li>
                 </ul>
-                <Button className="max-md:hidden">Button</Button>
+                <Button className="max-md:hidden font-black">문의하기</Button>
                 <HumButton toggled={toggled} setToggled={setToggled} />
 
             </nav>

@@ -21,7 +21,7 @@ const CardSlider = () => {
     };
 
     return (
-        <section className="bg-orange-200 w-full mx-auto carousel-container h-[500px] max-md:h-[350px] flex flex-col items-center relative">
+        <section className="w-full mx-auto carousel-container h-[500px] max-md:h-[350px] flex flex-col items-center relative">
             <article className="min-w-[150px] py-[6px] mt-2 animate-fadeInDelayed">
                 <section className="relative inline-block bg-nephritis text-black text-lg font-semibold px-4 py-2 rounded-lg box-content">
                     <div className="flex gap-[0.5px]">
@@ -39,7 +39,7 @@ const CardSlider = () => {
                     const isNext = index === (currentIdx + 1) % items.length;
 
                     return (
-                        <div
+                        <section
                             key={item.id}
                             className={`carousel-item absolute max-w-[292px] max-md:max-w-full max-md:w-[234px] w-1/2 max-h-[408px] h-full max-md:h-[311px] transition-transform duration-500 ease-in-out ${isActive
                                 ? "transform translate-x-0 z-10"
@@ -50,10 +50,33 @@ const CardSlider = () => {
                                         : "opacity-0 pointer-events-none"
                                 }`}
                         >
-                            <div className="item-content h-full flex justify-center items-center bg-gray-200 p-6 rounded-lg shadow-lg">
-                                {item.content}
-                            </div>
-                        </div>
+                            <article className="item-content h-full flex justify-center flex-col items-center bg-white p-6 rounded-lg shadow-lg">
+                                <div className="top_slider_card_section flex justify-center items-center flex-col">
+                                    <div className="image_wrapper relative w-[120px] height=[120px]">
+                                        <Image src="/lady_on_slider.png" width={120} height={120} alt="girl image" />
+                                        <Image src="/flag_icon.png" width={25} height={18} alt="flag icon" className="absolute bottom-0 right-0" />
+                                    </div>
+                                    <Text className="leading-[150%] font-black text-[#24252f] mt-2 text-2xl max-md:text-lg">Abhishek Gupts</Text>
+                                    <Text size={"md"} className="text-[#4a77ff] leading-[150%] font-black text-center max-md:text-sm">마케팅 · 2y+</Text>
+                                </div>
+                                <div className="bottom_slider_card_section mt-4 md:mt-9 flex flex-col justify-center items-center gap-1">
+                                    <article className="w-fit rounded-md py-1 px-3 border-[#c1c5cf] border-2">
+                                        <Text className="leading-[150%] text-sm md:text-base font-black" variant={"lightest_dark"}>마케팅 콘텐츠 제작</Text>
+                                    </article>
+                                    <article className="w-fit rounded-md py-1 px-3 border-[#c1c5cf] border-2">
+                                        <Text className="leading-[150%] text-sm md:text-base font-black" variant={"lightest_dark"}>인스타그램 관리</Text>
+                                    </article>
+                                    <section className="flex gap-x-1">
+                                        <article className="w-fit rounded-md py-1 px-3 border-[#c1c5cf] border-2">
+                                            <Text className="leading-[150%] text-sm md:text-base font-black" variant={"lightest_dark"}> 트위터 관리</Text>
+                                        </article>
+                                        <article className="w-fit rounded-md py-1 px-3 border-[#c1c5cf] border-2">
+                                            <Text className="leading-[150%] text-sm md:text-base font-black" variant={"lightest_dark"}>블로그 글 작성</Text>
+                                        </article>
+                                    </section>
+                                </div>
+                            </article>
+                        </section>
                     );
                 })}
 
