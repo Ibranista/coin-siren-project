@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
   lang: string;
 }>) {
-  console.log('hello')
+
   return (
     <html lang={lang} className={poppins.className}>
       <body>
