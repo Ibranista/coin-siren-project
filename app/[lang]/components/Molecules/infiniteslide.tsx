@@ -18,7 +18,7 @@ export default function InfiniteSlider() {
         arrows: false
     };
     return (
-        <div className="max-w-[1201.5px] px-4 mx-auto mt-2">
+        <div className="max-w-[1201.5px] px-4 mx-auto mt-2 max-md:hidden">
             <div className="slider-container">
                 <Slider {...settings2}>
                     <div className="bg-white bg-opacity-[20%] rounded-md mr-2" style={{ width: 332 }}>

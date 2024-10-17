@@ -52,6 +52,7 @@ export default function HeroJumbotron() {
                     </section>
                 </section>
 
+
                 {/* slider section */}
                 <div className="card_slider_wrapper">
                     <CardSlider />
@@ -75,6 +76,9 @@ export default function HeroJumbotron() {
                         <Text>평판 조회</Text>
                     </div>
                 </section>
+                <article className="text_for_mobile mt-4 px-4 md:hidden">
+                    <Text className="text-[#FBFF23] underline">개발자가 필요하신가요?</Text>
+                </article>
             </article>
             {/* slider for larger screen only */}
             <div className="slider_container">

@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang={lang} className={poppins.className}>
       <body>
         <main className="">
-          <section className="main_jumbotron">
+          <section className="main_jumbotron max-lg:pb-[60px] pb-[108px]">
             <Navbar />
             <HeroJumbotron />
           </section>
