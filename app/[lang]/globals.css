@@ -37,10 +37,10 @@ body {
 /* media max 768px */
 @media (max-width: 768px) {
   .sidebar {
-    @apply absolute  duration-300 ease-in-out
-  bg-primary_blue top-[60px] max-lg:h-[calc(100vh-60px)] w-full max-w-[70%] flex-col max-md:gap-4 max-md:px-4 py-4;
+    @apply absolute duration-300 ease-in-out bg-primary_blue top-[60px] max-lg:h-[calc(100vh-60px)] w-full max-w-[70%] flex-col max-md:gap-4 max-md:px-4 py-4;
   }
 }
+
 /* three rows */
 
 .custom_border::before {
@@ -59,4 +59,13 @@ body {
 
 .slick-slide {
   margin-right: 8px !important;
+}
+
+.main_jumbotron {
+  background:
+    linear-gradient(90deg, rgba(38, 194, 185, 1) 0%, rgba(40, 139, 231, 1) 100%),
+    url('/jubmbotron_background.jpg');
+  background-blend-mode: normal;
+  background-size: cover;
+  background-position: center;
 }

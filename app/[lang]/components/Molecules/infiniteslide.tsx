@@ -14,7 +14,8 @@ export default function InfiniteSlider() {
         centerMode: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        variableWidth: true
+        variableWidth: true,
+        arrows: false
     };
     return (
         <div className="max-w-[1201.5px] px-4 mx-auto mt-2">

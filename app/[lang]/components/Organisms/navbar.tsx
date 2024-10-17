@@ -19,7 +19,7 @@ export default function Navbar() {
     ];
 
     return (
-        <section className="bg-primary_blue">
+        <section>
             <nav className="flex justify-between items-center h-[60px] relative box-border px-4 max-w-[1201.5px] w-full mx-auto">
                 <Image
                     src="/logo.png"

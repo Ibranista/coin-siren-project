@@ -16,8 +16,8 @@ export function middleware(request: any) {
   if (
     pathname.startsWith('/_next/') ||
     pathname.startsWith('/favicon.ico') ||
-    pathname.startsWith('/logo.png') ||
-    pathname.endsWith('.png')
+    pathname.endsWith('.png')||
+    pathname.endsWith('.jpg')
   ) {
     return; // Skip locale prefixing for Next.js assets and static files
   }

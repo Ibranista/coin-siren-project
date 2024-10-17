@@ -3,6 +3,7 @@ import "material-symbols";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Navbar from "./components/Organisms/navbar";
+import HeroJumbotron from "./components/Organisms/heroJumbotron";
 
 
 export const metadata: Metadata = {
@@ -28,7 +29,10 @@ export default function RootLayout({
     <html lang={lang} className={poppins.className}>
       <body>
         <main className="">
-          <Navbar />
+          <section className="main_jumbotron">
+            <Navbar />
+            <HeroJumbotron />
+          </section>
           {children}
         </main>
       </body >
