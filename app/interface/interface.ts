@@ -88,3 +88,65 @@ export interface IRightContent {
   detail_2: string;
 }
 [];
+
+// bottom content section
+interface ImageData {
+  src: string;
+  width: number;
+  height: number;
+  alt: string;
+}
+
+interface ContactInfo {
+  phone: string;
+  email: string;
+}
+
+interface Service {
+  icon: ImageData;
+  title: string;
+  link_text: string;
+  link_icon: ImageData;
+}
+
+interface CompanyInfo {
+  name: string;
+  ceo: string;
+  details: CompanyDetail[];
+}
+
+interface CompanyDetail {
+  company_name: string;
+  ceo_name: string;
+}
+
+interface RegistrationInfo {
+  business_registration_number: string;
+  CIN: string;
+}
+
+interface AddressInfo {
+  korea: string;
+  india: string;
+}
+
+export interface MainContent {
+  company_primary_data_?: {
+    logo: ImageData;
+    description: string;
+    contact: ContactInfo;
+  };
+  services?: Service[];
+  company?: CompanyInfo;
+  registration?: RegistrationInfo;
+  address?: AddressInfo;
+}
+
+export interface IPrime_company_data {
+  company_primary_data_?: {
+    logo: ImageData;
+    description: string;
+    contact: ContactInfo;
+  };
+  services?: Service[];
+}
