@@ -8,7 +8,7 @@ export default async function Home({ params }: { params: { lang: string } }) {
 
   const response = await fetch(url);
   const data = await response.json();
-  console.log('the data==>', data)
+  console.log('the params localedaf==>', data)
   return (
     <main>
       <Middlegrid />

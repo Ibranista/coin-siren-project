@@ -20,7 +20,7 @@ const boxVariants = cva("box-primary", {
         size: {
             sm: "text-sm",
             md: "w-60 px-4",
-            lg: "text-5xl max-md:text-4xl",
+            lg: "p-6",
         }
     },
     defaultVariants: {

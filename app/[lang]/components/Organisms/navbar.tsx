@@ -7,6 +7,7 @@ import { useState } from "react";
 import NavDropdown from "../Molecules/navDropdown";
 import NavLink from "../Molecules/navLink";
 import AccordionContent from "../Molecules/accordionContent";
+import LocaleSwitch from "@/app/util/localSwitch";
 
 export default function Navbar() {
     const [toggled, setToggled] = useState(false);
@@ -14,14 +15,17 @@ export default function Navbar() {
     return (
         <section>
             <nav className="flex justify-between items-center h-[60px] relative box-border px-4 max-w-[1201.5px] w-full mx-auto">
-                <Image
-                    src="/logo.png"
-                    alt="logo"
-                    width={114}
-                    height={21}
-                    priority
-                    unoptimized
-                />
+                <div className="logo_image_wrapper relative w-[114px] height-[21px]">
+                    <Image
+                        src="/logo.png"
+                        alt="logo"
+                        width={114}
+                        height={21}
+                        priority
+                        unoptimized
+                    />
+                    <LocaleSwitch />
+                </div>
                 <ul className={`nav_links flex gap-[60px] 
            sidebar transition-left
             ${toggled ? " left-0" : "-left-full"}

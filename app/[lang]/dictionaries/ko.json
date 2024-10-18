@@ -113,7 +113,6 @@
         }
     ],
     "main_content": [
-        // middlegrid.tsx
         {
             "company_primary_data_": {
                 "logo": {

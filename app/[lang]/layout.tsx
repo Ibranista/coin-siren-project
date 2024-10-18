@@ -18,7 +18,15 @@ const poppins = Poppins({
   weight: ["400", "600", "900"]
 });
 
-export default function RootLayout({
+export async function generateStaticParams() {
+  return [{
+    lang: "en-US"
+  }, {
+    lang: "ko-KR"
+  }]
+}
+
+export default async function RootLayout({
   children,
   lang = "en",
 }: Readonly<{
@@ -27,7 +35,7 @@ export default function RootLayout({
 }>) {
 
   return (
-    <html lang={lang} className={poppins.className}>
+    <html lang={"ko-KR"} className={poppins.className}>
       <body>
         <main className="bg-slight_light">
           <section className="main_jumbotron max-lg:pb-[60px] pb-[108px]">

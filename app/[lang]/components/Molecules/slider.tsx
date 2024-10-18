@@ -51,7 +51,7 @@ const CardSlider = () => {
                                         : "opacity-0 pointer-events-none"
                                 }`}
                         >
-                            <CardBox className="item-content h-full flex justify-center flex-col items-center" variant={"secondary"}>
+                            <CardBox className="item-content h-full flex justify-center flex-col items-center" variant={"secondary"} size={"lg"}>
                                 <div className="top_slider_card_section flex justify-center items-center flex-col">
                                     <div className="image_wrapper relative w-[120px] height=[120px] max-md:w-[64px] max-md:h-[64px]">
                                         <Image src="/lady_on_slider.png" width={120} height={120} className="max-md:w-[64px]" alt="girl image" />

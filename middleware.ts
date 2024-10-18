@@ -1,12 +1,12 @@
 import { match } from '@formatjs/intl-localematcher';
 import Negotiator from 'negotiator';
-import { defaultLocale } from './constants/locals';
+// import { defaultLocale } from './constants/locals';
 import { i18n } from './i18n-config';
 import { NextResponse } from 'next/server';
 
 export function middleware(request: any) {
   const { pathname } = request.nextUrl;
-
+  const { defaultLocale } = i18n;
   // Skip API routes from being locale-prefixed
   if (pathname.startsWith('/api')) {
     return; // Let the API routes pass without redirect
@@ -16,7 +16,7 @@ export function middleware(request: any) {
   if (
     pathname.startsWith('/_next/') ||
     pathname.startsWith('/favicon.ico') ||
-    pathname.endsWith('.png')||
+    pathname.endsWith('.png') ||
     pathname.endsWith('.jpg')
   ) {
     return; // Skip locale prefixing for Next.js assets and static files
@@ -30,7 +30,7 @@ export function middleware(request: any) {
   if (pathnameHasLocale) return;
 
   // Redirect if there is no locale in the pathname
-  const headers = { 'accept-language': 'en-US,en;q=0.5' };
+  const headers = { 'accept-language': 'ko-KR,en;q=0.5' };
   const languages = new Negotiator({ headers }).languages();
   const locale = match(languages, i18n.locales, defaultLocale);
 
