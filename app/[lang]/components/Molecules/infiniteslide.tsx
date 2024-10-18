@@ -10,13 +10,16 @@ export default function InfiniteSlider({ items }: { items: SlideItemLgScreen[] }
     const settings2 = {
         className: "slider variable-width",
         dots: false,
-        autoplay: false,
+        autoplay: true,
         infinite: true,
         centerMode: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         variableWidth: true,
-        arrows: false
+        arrows: false,
+        autoplaySpeed: 5000,
+        speed: 2000,
+        cssEase: "linear"
     };
     return (
         <div className="max-w-[1201.5px] px-4 mx-auto mt-2 max-md:hidden">
