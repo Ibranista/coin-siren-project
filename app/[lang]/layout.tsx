@@ -5,6 +5,9 @@ import { Poppins } from "next/font/google";
 import Navbar from "./components/Organisms/navbar";
 import HeroJumbotron from "./components/Organisms/heroJumbotron";
 import Text from "./components/Atoms/text";
+import TopNavHero from "./components/Templates/tophero.template";
+import { IFuncLangParams } from "../interface/interface";
+import { locales } from "@/constants/locals";
 
 
 export const metadata: Metadata = {
@@ -19,29 +22,24 @@ const poppins = Poppins({
 });
 
 export async function generateStaticParams() {
-  return [{
-    lang: "en-US"
-  }, {
-    lang: "ko-KR"
-  }]
+  return locales
 }
 
 export default async function RootLayout({
+  params,
   children,
-  lang = "en",
-}: Readonly<{
+}: IFuncLangParams & Readonly<{
   children: React.ReactNode;
-  lang: string;
 }>) {
+  const { lang } = params;
 
   return (
-    <html lang={"ko-KR"} className={poppins.className}>
+    <html lang={lang || "ko-KR"} className={poppins.className}>
       <body>
         <main className="bg-slight_light">
-          <section className="main_jumbotron max-lg:pb-[60px] pb-[108px]">
-            <Navbar />
-            <HeroJumbotron />
-          </section>
+          <header>
+            <TopNavHero lang={lang || "ko-KR"} />
+          </header>
           {children}
           <footer className="pt-9 pb-[60px] md:pt-12 md:pb-20 px-4 max-w-[1201.5px] mx-auto">
             <Text variant={"lightest_dark"} className="text-[13px] font-black">

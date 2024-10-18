@@ -1,7 +1,8 @@
+import { IFuncLangParams } from "../interface/interface";
 import Middlegrid from "./components/Molecules/middlegrid";
 import Middlegrid2 from "./components/Molecules/middlegrid2";
 
-export default async function Home({ params }: { params: { lang: string } }) {
+export default async function Home({ params }: IFuncLangParams) {
   const locale = params.lang || 'en-US';
   const baseUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
   const url = `${baseUrl}/api/nav-data?locale=${locale}`;

@@ -7,3 +7,27 @@ export interface IButtonProps extends IBaseProps<HTMLButtonElement>, ButtonHTMLA
 export interface ITextProps extends IBaseProps<HTMLParagraphElement>, ButtonHTMLAttributes<HTMLParagraphElement> {}
 
 export interface IBoxProps extends IBaseProps<HTMLDivElement>, ButtonHTMLAttributes<HTMLDivElement> {}
+
+export interface IFuncLangParams {
+  params: {
+    lang: string;
+  };
+}
+
+export interface ISubLink {
+  title: string;
+  link: string;
+}
+
+interface INavbarItem {
+  logo?: string;
+  title?: string;
+  link: string;
+  icon?: string;
+  subLinks?: ISubLink[];
+  isButton?: boolean;
+}
+
+export interface INavbar {
+  navbar: INavbarItem[];
+}
