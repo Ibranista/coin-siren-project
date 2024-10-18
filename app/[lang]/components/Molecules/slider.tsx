@@ -3,20 +3,15 @@ import React, { useState } from "react";
 import Text from "../Atoms/text";
 import Image from "next/image";
 import CardBox from "../Atoms/cardBox";
+import { IRightContent } from "@/app/interface/interface";
 
-const CardSlider = () => {
+const CardSlider = ({ slider_content }: { slider_content: IRightContent[] }) => {
     const [currentIdx, setCurrentIdx] = useState(1);
 
-    const items = [
-        { id: 1, content: "Item 1 - Center" },
-        { id: 2, content: "Item 2 - Right" },
-        { id: 3, content: "Item 3 - Left" },
-    ];
-
     const changeItem = (step: number) => {
-        let newIdx = (currentIdx + step) % items.length;
+        let newIdx = (currentIdx + step) % slider_content.length;
         if (newIdx < 0) {
-            newIdx = items.length - 1;
+            newIdx = slider_content.length - 1;
         }
         setCurrentIdx(newIdx);
     };
@@ -34,14 +29,14 @@ const CardSlider = () => {
             </article>
             <div className="carousel overflow-hidden mx-auto mt-5 max-md:mt-5 flex justify-center relative w-full max-w-[900px] h-full animate-fadeIn">
                 {/* Sliding Items */}
-                {items.map((item, index) => {
+                {slider_content.map((item, index) => {
                     const isActive = index === currentIdx;
-                    const isPrev = index === (currentIdx + items.length - 1) % items.length;
-                    const isNext = index === (currentIdx + 1) % items.length;
-
+                    const isPrev = index === (currentIdx + slider_content.length - 1) % slider_content.length;
+                    const isNext = index === (currentIdx + 1) % slider_content.length;
+                    const { image, flag_icon, name, job, description, sub_description, detail_1, detail_2 } = item ?? {};
                     return (
                         <section
-                            key={item.id}
+                            key={index}
                             className={`carousel-item absolute max-w-[292px] max-md:max-w-full max-md:w-[234px] w-1/2 max-h-[408px] h-full max-md:h-[311px] transition-transform duration-500 ease-in-out ${isActive
                                 ? "transform translate-x-0 z-10"
                                 : isPrev
@@ -54,25 +49,25 @@ const CardSlider = () => {
                             <CardBox className="item-content h-full flex justify-center flex-col items-center" variant={"secondary"} size={"lg"}>
                                 <div className="top_slider_card_section flex justify-center items-center flex-col">
                                     <div className="image_wrapper relative w-[120px] height=[120px] max-md:w-[64px] max-md:h-[64px]">
-                                        <Image src="/lady_on_slider.png" width={120} height={120} className="max-md:w-[64px]" alt="girl image" />
-                                        <Image src="/flag_icon.png" width={25} height={18} alt="flag icon" className="absolute bottom-0 right-0" />
+                                        <Image src={image} width={120} height={120} className="max-md:w-[64px]" alt="girl image" />
+                                        <Image src={flag_icon} width={25} height={18} alt="flag icon" className="absolute bottom-0 right-0" />
                                     </div>
-                                    <Text className="leading-[150%] font-black text-[#24252f] mt-2 text-2xl max-md:text-lg">Abhishek Gupts</Text>
-                                    <Text size={"md"} className="text-[#4a77ff] leading-[150%] font-black text-center max-md:text-sm">마케팅 · 2y+</Text>
+                                    <Text className="leading-[150%] font-black text-[#24252f] mt-2 text-2xl max-md:text-lg">{name}</Text>
+                                    <Text size={"md"} className="text-[#4a77ff] leading-[150%] font-black text-center max-md:text-sm">{job}</Text>
                                 </div>
                                 <div className="bottom_slider_card_section mt-4 md:mt-9 flex flex-col justify-center items-center gap-1">
                                     <article className="w-fit rounded-md py-1 px-3 border-[#c1c5cf] border-2">
-                                        <Text className="leading-[150%] text-sm md:text-base font-black" variant={"lightest_dark"}>마케팅 콘텐츠 제작</Text>
+                                        <Text className="leading-[150%] text-sm md:text-base font-black" variant={"lightest_dark"}>{description}</Text>
                                     </article>
                                     <article className="w-fit rounded-md py-1 px-3 border-[#c1c5cf] border-2">
-                                        <Text className="leading-[150%] text-sm md:text-base font-black" variant={"lightest_dark"}>인스타그램 관리</Text>
+                                        <Text className="leading-[150%] text-sm md:text-base font-black" variant={"lightest_dark"}>{sub_description}</Text>
                                     </article>
                                     <section className="flex gap-x-1">
                                         <article className="w-fit rounded-md py-1 px-3 border-[#c1c5cf] border-2">
-                                            <Text className="leading-[150%] text-sm md:text-base font-black" variant={"lightest_dark"}> 트위터 관리</Text>
+                                            <Text className="leading-[150%] text-sm md:text-base font-black" variant={"lightest_dark"}> {detail_1}</Text>
                                         </article>
                                         <article className="w-fit rounded-md py-1 px-3 border-[#c1c5cf] border-2">
-                                            <Text className="leading-[150%] text-sm md:text-base font-black" variant={"lightest_dark"}>블로그 글 작성</Text>
+                                            <Text className="leading-[150%] text-sm md:text-base font-black" variant={"lightest_dark"}>{detail_2}</Text>
                                         </article>
                                     </section>
                                 </div>

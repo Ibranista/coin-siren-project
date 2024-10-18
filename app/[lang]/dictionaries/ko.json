@@ -37,77 +37,93 @@
             "isButton": true
         }
     ],
-    "left_content": [
-        {
-            "job_description": {
-                "job_type": "풀타임, 파트타임",
-                "question": "최고의 실력을 가진 외국인 인재를 찾고 계신가요?",
-                "description": "법률 및 인사관리 부담없이 1주일 이내에 원격으로 채용해보세요."
+    "left_content": {
+        "job_description": {
+            "job_type": "풀타임, 파트타임",
+            "short_brief": "최고의 실력을 가진",
+            "question": "외국인 인재를 찾고 계신가요?",
+            "description": "법률 및 인사관리 부담없이 1주일 이내에 원격으로 채용해보세요."
+        },
+        "developer_section_lg_screen": {
+            "question": "개발자가 필요하신가요?"
+        },
+        "salary_lg_screen": {
+            "average": "평균 월 120만원",
+            "note": "임금을 해당 국가를 기준으로 계산합니다."
+        },
+        "replacement_policy_lg_screen": {
+            "maximum_replacements": "최대 3회 인력교체",
+            "note": "막상 채용해보니 맞지 않아도 걱정하지 마세요. "
+        },
+        "working_hours_lg_screen": {
+            "maximum_hours": "평균 3일, 최대 10일",
+            "details": "급하게 사람이 필요한 경우에도 빠른 채용이 가능합니다."
+        },
+        "checkboxes_sm_screen": [
+            {
+                "title": "한국어 능력"
             },
-            "developer_section": {
-                "question": "개발자가 필요하신가요?"
+            {
+                "title": "업무 수행 능력"
             },
-            "salary": {
-                "average": "평균 월 120만원",
-                "note": "임금을 해당 국가를 기준으로 계산합니다."
+            {
+                "title": "겸업 여부"
             },
-            "replacement_policy": {
-                "maximum_replacements": "최대 3회 인력교체",
-                "note": "막상 채용해보니 맞지 않아도 걱정하지 마세요. "
+            {
+                "title": "평판 조회"
+            }
+        ],
+        "slide_items_lg_screen": [
+            {
+                "icon": "/frame1.png",
+                "title": "해외 마케팅"
             },
-            "working_hours": {
-                "maximum_hours": "평균 3일, 최대 10일",
-                "details": "급하게 사람이 필요한 경우에도 빠른 채용이 가능합니다."
+            {
+                "icon": "/frame1.png",
+                "title": "퍼블리셔"
             },
-            "slide_items": [
-                {
-                    "icon": "/icons/logo",
-                    "title": "해외 마케팅"
-                },
-                {
-                    "icon": "/icons/logo",
-                    "title": "퍼블리셔"
-                },
-                {
-                    "icon": "/icons/logo",
-                    "title": "캐드원(제도사)"
-                },
-                {
-                    "icon": "/icons/logo",
-                    "title": "해외 세일즈"
-                },
-                {
-                    "icon": "/icons/logo",
-                    "title": "해외 CS"
-                }
-            ]
-        }
-    ],
+            {
+                "icon": "/frame1.png",
+                "title": "캐드원(제도사)"
+            },
+            {
+                "icon": "/frame1.png",
+                "title": "해외 세일즈"
+            },
+            {
+                "icon": "/frame1.png",
+                "title": "해외 CS"
+            }
+        ]
+    },
     "right_content": [
         {
-            "image": "/icons/logo",
-            "title": "Abhishek Gupta",
-            "sub_title": "마케팅 · 2y+",
-            "description_title": "마케팅 콘텐츠 제작",
-            "description_subtitle": "인스타그램 관리",
+            "image": "/lady_on_slider.png",
+            "flag_icon": "/flag_icon.png",
+            "name": "Abhishek Gupta",
+            "job": "마케팅 · 2y+",
+            "description": "마케팅 콘텐츠 제작",
+            "sub_description": "인스타그램 관리",
             "detail_1": "트위터 관리",
             "detail_2": "블로그 글 작성"
         },
         {
-            "image": "/icons/logo",
-            "title": "Abhishek Gupta",
-            "sub_title": "마케팅 · 2y+",
-            "description_title": "마케팅 콘텐츠 제작",
-            "description_subtitle": "인스타그램 관리",
+            "image": "/lady_on_slider.png",
+            "flag_icon": "/flag_icon.png",
+            "name": "Abhishek Gupta",
+            "job": "마케팅 · 2y+",
+            "description": "마케팅 콘텐츠 제작",
+            "sub_description": "인스타그램 관리",
             "detail_1": "트위터 관리",
             "detail_2": "블로그 글 작성"
         },
         {
-            "image": "/icons/logo",
-            "title": "Abhishek Gupta",
-            "sub_title": "마케팅 · 2y+",
-            "description_title": "마케팅 콘텐츠 제작",
-            "description_subtitle": "인스타그램 관리",
+            "image": "/lady_on_slider.png",
+            "flag_icon": "/flag_icon.png",
+            "name": "Abhishek Gupta",
+            "job": "마케팅 · 2y+",
+            "description": "마케팅 콘텐츠 제작",
+            "sub_description": "인스타그램 관리",
             "detail_1": "트위터 관리",
             "detail_2": "블로그 글 작성"
         }

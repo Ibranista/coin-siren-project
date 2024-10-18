@@ -9,7 +9,6 @@ export default async function Home({ params }: IFuncLangParams) {
 
   const response = await fetch(url);
   const data = await response.json();
-  console.log('the params localedaf==>', data)
   return (
     <main>
       <Middlegrid />

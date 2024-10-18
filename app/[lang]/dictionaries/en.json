@@ -37,79 +37,95 @@
             "isButton": true
         }
     ],
-    "left_content": [
-        {
-            "job_description": {
-                "job_type": "Full-time, Part-time",
-                "question": "Are you looking for top foreign talent?",
-                "description": "Hire remotely within a week without the burden of legal and HR management."
+    "left_content": {
+        "job_description": {
+            "job_type": "Full-time, Part-time",
+            "short_brief": "Top-tier talent",
+            "question": "Are you looking for foreign talent?",
+            "description": "Hire remotely within a week without the burden of legal and HR management."
+        },
+        "developer_section_lg_screen": {
+            "question": "Do you need a developer?"
+        },
+        "salary_lg_screen": {
+            "average": "Average monthly salary: 1.2 million KRW",
+            "note": "Wages are calculated based on the respective country."
+        },
+        "replacement_policy_lg_screen": {
+            "maximum_replacements": "Up to 3 replacements",
+            "note": "Don't worry if the hire doesn't fit. You can replace up to 3 times."
+        },
+        "working_hours_lg_screen": {
+            "maximum_hours": "Average 3 days, up to 10 days",
+            "details": "Quick hiring is available even for urgent needs."
+        },
+        "checkboxes_sm_screen": [
+            {
+                "title": "Korean Language Proficiency"
             },
-            "developer_section": {
-                "question": "Do you need a developer?"
+            {
+                "title": "Work Performance Ability"
             },
-            "salary": {
-                "average": "Average monthly salary: 1.2 million KRW",
-                "note": "The salary is calculated based on the country's standard."
+            {
+                "title": "Side Job Status"
             },
-            "replacement_policy": {
-                "maximum_replacements": "Up to 3 replacements",
-                "note": "Don't worry if the hire doesn't work out. We've got you covered."
+            {
+                "title": "Reference Check"
+            }
+        ],
+        "slide_items_lg_screen": [
+            {
+                "icon": "/frame1.png",
+                "title": "Overseas Marketing"
             },
-            "working_hours": {
-                "maximum_hours": "Average 3 days, up to 10 days",
-                "details": "Quick hiring is available even when you need someone urgently."
+            {
+                "icon": "/frame1.png",
+                "title": "Publisher"
             },
-            "slide_items": [
-                {
-                    "icon": "/icons/logo",
-                    "title": "Overseas Marketing"
-                },
-                {
-                    "icon": "/icons/logo",
-                    "title": "Publisher"
-                },
-                {
-                    "icon": "/icons/logo",
-                    "title": "CAD Operator"
-                },
-                {
-                    "icon": "/icons/logo",
-                    "title": "Overseas Sales"
-                },
-                {
-                    "icon": "/icons/logo",
-                    "title": "Overseas Customer Service"
-                }
-            ]
-        }
-    ],
+            {
+                "icon": "/frame1.png",
+                "title": "CAD Designer (Draftsman)"
+            },
+            {
+                "icon": "/frame1.png",
+                "title": "Overseas Sales"
+            },
+            {
+                "icon": "/frame1.png",
+                "title": "Overseas Customer Service"
+            }
+        ]
+    },
     "right_content": [
         {
-            "image": "/icons/logo",
-            "title": "Abhishek Gupta",
-            "sub_title": "Marketing · 2+ years",
-            "description_title": "Marketing Content Creation",
-            "description_subtitle": "Instagram Management",
-            "detail_1": "Twitter Management",
-            "detail_2": "Blog Writing"
+            "image": "/lady_on_slider.png",
+            "flag_icon": "/flag_icon.png",
+            "name": "Abhishek Gupta",
+            "job": "Marketing · 2y+",
+            "description": "Marketing content creation",
+            "sub_description": "Instagram management",
+            "detail_1": "Twitter management",
+            "detail_2": "Blog writing"
         },
         {
-            "image": "/icons/logo",
-            "title": "Abhishek Gupta",
-            "sub_title": "Marketing · 2+ years",
-            "description_title": "Marketing Content Creation",
-            "description_subtitle": "Instagram Management",
-            "detail_1": "Twitter Management",
-            "detail_2": "Blog Writing"
+            "image": "/lady_on_slider.png",
+            "flag_icon": "/flag_icon.png",
+            "name": "Abhishek Gupta",
+            "job": "Marketing · 2y+",
+            "description": "Marketing content creation",
+            "sub_description": "Instagram management",
+            "detail_1": "Twitter management",
+            "detail_2": "Blog writing"
         },
         {
-            "image": "/icons/logo",
-            "title": "Abhishek Gupta",
-            "sub_title": "Marketing · 2+ years",
-            "description_title": "Marketing Content Creation",
-            "description_subtitle": "Instagram Management",
-            "detail_1": "Twitter Management",
-            "detail_2": "Blog Writing"
+            "image": "/lady_on_slider.png",
+            "flag_icon": "/flag_icon.png",
+            "name": "Abhishek Gupta",
+            "job": "Marketing · 2y+",
+            "description": "Marketing content creation",
+            "sub_description": "Instagram management",
+            "detail_1": "Twitter management",
+            "detail_2": "Blog writing"
         }
     ],
     "main_content": [
