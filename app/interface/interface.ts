@@ -62,7 +62,7 @@ interface CheckboxSmScreen {
   title: string;
 }
 
-interface SlideItemLgScreen {
+export interface SlideItemLgScreen {
   icon: string;
   title: string;
 }

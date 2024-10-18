@@ -8,7 +8,7 @@ export default function HeroJumbotron({ leftContent, rightContent }: {
     leftContent: ILeftContent,
     rightContent: IRightContent[]
 }) {
-    const { job_description, developer_section_lg_screen, salary_lg_screen, replacement_policy_lg_screen, working_hours_lg_screen, checkboxes_sm_screen } = leftContent ?? {};
+    const { job_description, developer_section_lg_screen, salary_lg_screen, replacement_policy_lg_screen, working_hours_lg_screen, checkboxes_sm_screen, slide_items_lg_screen } = leftContent ?? {};
     const { job_type, short_brief, question, description } = job_description ?? {};
 
     return (
@@ -79,7 +79,7 @@ export default function HeroJumbotron({ leftContent, rightContent }: {
             </article>
             {/* slider for larger screen only */}
             <div className="slider_container mt-[60px]">
-                <InfiniteSlider />
+                <InfiniteSlider items={slide_items_lg_screen} />
             </div>
         </>
     )
