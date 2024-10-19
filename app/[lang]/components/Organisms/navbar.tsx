@@ -3,7 +3,7 @@ import Image from "next/image";
 import Text from "../Atoms/text";
 import Button from "../Atoms/button";
 import HumButton from "../Atoms/humberger";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavDropdown from "../Molecules/navDropdown";
 import NavLink from "../Molecules/navLink";
 import AccordionContent from "../Molecules/accordionContent";
@@ -17,6 +17,10 @@ export default function Navbar({ navContent }: { navContent: INavbar }) {
     const logoData = navbar?.[0];
     const logoSubLinkedData = navbar?.[1];
     const { title, subLinks } = logoSubLinkedData ?? {};
+
+    useEffect(() => {
+        document.body.style.overflow = toggled ? "hidden" : "auto";
+    }, [toggled]);
 
     return (
         <section>
