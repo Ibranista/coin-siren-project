@@ -18,7 +18,7 @@ export default async function Home({ params }: IFuncLangParams) {
     <main>
       <Middlegrid company_prime_data={firstContent} />
 
-      <Middlegrid2 />
+      <Middlegrid2 secondContent={secondContent} />
     </main>
   );
 }

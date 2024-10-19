@@ -40,6 +40,7 @@ const config: Config = {
         lighter_black: '#344054',
         lightest_black: '#5E626F',
         slight_light: '#fbfbfb',
+        light_brand: '#8BC4FF',
       },
     },
   },
