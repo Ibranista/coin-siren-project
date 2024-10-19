@@ -57,8 +57,6 @@ Returns data for the navigation menu.
 
 `const [navResponse, heroResponse] = await Promise.all([fetch(navUrl), fetch(heroUrl)]);`
 
-## Conclusion
 
-This Next.js project provides a robust framework for developing a multilingual application with dynamic content. Feel free to explore the codebase and customize it according to your needs!
 
 ---

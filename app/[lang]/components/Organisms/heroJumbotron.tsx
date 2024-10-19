@@ -3,6 +3,7 @@ import Text from "../Atoms/text";
 import CardSlider from "../Molecules/slider";
 import InfiniteSlider from "../Molecules/infiniteslide";
 import { ILeftContent, IRightContent } from "@/app/interface/interface";
+import CardBox from "../Atoms/cardBox";
 
 export default function HeroJumbotron({ leftContent, rightContent }: {
     leftContent: ILeftContent,
@@ -10,6 +11,24 @@ export default function HeroJumbotron({ leftContent, rightContent }: {
 }) {
     const { job_description, developer_section_lg_screen, salary_lg_screen, replacement_policy_lg_screen, working_hours_lg_screen, checkboxes_sm_screen, slide_items_lg_screen } = leftContent ?? {};
     const { job_type, short_brief, question, description } = job_description ?? {};
+
+    const job_data = [
+        {
+            key: "salary",
+            value: salary_lg_screen?.average,
+            note: salary_lg_screen?.note,
+        },
+        {
+            key: "replacement_policy",
+            value: replacement_policy_lg_screen?.maximum_replacements,
+            note: replacement_policy_lg_screen?.note,
+        },
+        {
+            key: "working_hours",
+            value: working_hours_lg_screen?.maximum_hours,
+            note: working_hours_lg_screen?.details,
+        }
+    ];
 
     return (
         <>
@@ -41,21 +60,14 @@ export default function HeroJumbotron({ leftContent, rightContent }: {
                             <Text className="text-lg underline font-black">{developer_section_lg_screen?.question}</Text>
                         </article>
                     </section>
-                    {/* three rows that are hidden on mobile */}
-                    <section className="three-rows grid grid-cols-3 gap-x-12 gap-y-2 pl-4 max-md:hidden mt-[60px] md:width-[579px] lg:flex-wrap animate-fadeIn">
-                        <article className="row_card max-w[161px] relative flex flex-col gap-2">
-                            <Text size={"mdx"} className="font-black custom_border pt-2">{salary_lg_screen?.average}</Text>
-                            <Text size={"md"} className="font-black">{salary_lg_screen?.note}</Text>
-                        </article>
-                        <article className="row_card max-w[161px] relative flex flex-col gap-2">
-                            <Text size={"mdx"} className="font-black custom_border pt-2">{replacement_policy_lg_screen?.maximum_replacements}</Text>
-                            <Text size={"md"} className="font-black">{replacement_policy_lg_screen?.note}</Text>
-                        </article>
-                        <article className="row_card max-w[161px] relative flex flex-col gap-2">
-                            <Text size={"mdx"} className="font-black custom_border pt-2">{working_hours_lg_screen?.maximum_hours}</Text>
-                            <Text size={"md"} className="font-black">{working_hours_lg_screen?.details}</Text>
-                        </article>
-                    </section>
+                    {/* three rows that are hidden on mobile */}                        <section className="three-rows grid grid-cols-3 gap-x-12 gap-y-2 pl-4 max-md:hidden mt-[60px] md:width-[579px] lg:flex-wrap animate-fadeIn">
+                            {job_data.map((item, index) => (
+                                <CardBox key={index} className="row_card relative flex flex-col gap-2" size={"sm"} variant={"default"}>
+                                    <Text size={"mdx"} className="font-black custom_border pt-2">{item.value}</Text>
+                                    <Text size={"md"} className="font-black">{item.note}</Text>
+                                </CardBox>
+                            ))}
+                        </section>
                 </section>
 
 

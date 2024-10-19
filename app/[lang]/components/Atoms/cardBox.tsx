@@ -16,11 +16,14 @@ const boxVariants = cva("box-primary", {
         variant: {
             primary: "bg-white rounded-md shadow-sm",
             secondary: "bg-white rounded-lg shadow-lg p-6",
+            default: ""
         },
         size: {
-            sm: "text-sm",
+            sm: "max-w-[161px]",
             md: "w-60 px-4",
+            mdx: "max-w-[306px]",
             lg: "p-6",
+            default: ""
         }
     },
     defaultVariants: {
