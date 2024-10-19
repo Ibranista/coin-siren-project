@@ -226,6 +226,7 @@
                 ]
             },
             "registration": {
+                "business_cin": "사업자등록번호 CIN",
                 "business_registration_number": "427-86-01187",
                 "CIN": "U74110DL2016PTC290812"
             },

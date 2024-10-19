@@ -121,6 +121,7 @@ interface CompanyDetail {
 }
 
 interface RegistrationInfo {
+  business_cin: string;
   business_registration_number: string;
   CIN: string;
 }
@@ -149,4 +150,10 @@ export interface IPrime_company_data {
     contact: ContactInfo;
   };
   services?: Service[];
+}
+
+export interface ISecondary_company_data {
+  company: CompanyInfo;
+  registration: RegistrationInfo;
+  address: AddressInfo;
 }

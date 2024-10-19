@@ -41,9 +41,9 @@ export default function HeroJumbotron({ leftContent, rightContent }: {
                     <section className="left_top_container px-4 max-w-[579px] flex flex-col gap-4">
                         {/* top-tooltip */}
                         <article className="min-w-[150px] py-[6px] mt-9 animate-fadeInDelayed">
-                            <div className="relative inline-block bg-nephritis text-black text-lg font-semibold px-4 py-2 rounded-lg box-content">
-                                <Text className="text-lg text-lightest_green font-black" size={"mdx"}>{job_type}</Text>
-                                <div className="absolute w-3 h-3 bg-nephritis rotate-45 top-[38px] left-[13px]"></div>
+                            <div className="relative inline-block bg-nephritis max-md:bg-light_brand text-black text-lg font-semibold px-4 py-2 rounded-lg box-content">
+                                <Text className="text-lg text-lightest_green max-md:text-white font-black" size={"mdx"}>{job_type}</Text>
+                                <div className="absolute w-3 h-3 bg-nephritis max-md:bg-light_brand rotate-45 top-[38px] left-[13px]"></div>
                             </div>
                         </article>
                         {/* sub-title */}
@@ -60,14 +60,15 @@ export default function HeroJumbotron({ leftContent, rightContent }: {
                             <Text className="text-lg underline font-black">{developer_section_lg_screen?.question}</Text>
                         </article>
                     </section>
-                    {/* three rows that are hidden on mobile */}                        <section className="three-rows grid grid-cols-3 gap-x-12 gap-y-2 pl-4 max-md:hidden mt-[60px] md:width-[579px] lg:flex-wrap animate-fadeIn">
-                            {job_data.map((item, index) => (
-                                <CardBox key={index} className="row_card relative flex flex-col gap-2" size={"sm"} variant={"default"}>
-                                    <Text size={"mdx"} className="font-black custom_border pt-2">{item.value}</Text>
-                                    <Text size={"md"} className="font-black">{item.note}</Text>
-                                </CardBox>
-                            ))}
-                        </section>
+                    {/* three rows that are hidden on mobile */}
+                    <section className="three-rows grid grid-cols-3 gap-x-12 gap-y-2 pl-4 max-md:hidden mt-[60px] md:width-[579px] lg:flex-wrap animate-fadeIn">
+                        {job_data.map((item, index) => (
+                            <CardBox key={index} className="row_card relative flex flex-col gap-2" size={"sm"} variant={"default"}>
+                                <Text size={"mdx"} className="font-black custom_border pt-2">{item.value}</Text>
+                                <Text size={"md"} className="font-black">{item.note}</Text>
+                            </CardBox>
+                        ))}
+                    </section>
                 </section>
 
 
@@ -77,8 +78,8 @@ export default function HeroJumbotron({ leftContent, rightContent }: {
                 </div>
                 {/* checkbox section for small screens */}
                 <section className="check_boxes_wrapper flex px-4 flex-wrap gap-x-2 gap-y-8 md:hidden">{
-                    checkboxes_sm_screen?.map(item => (
-                        <div className="flex gap-3 items-center min-w-[109px]">
+                    checkboxes_sm_screen?.map((item, index) => (
+                        <div className="flex gap-3 items-center min-w-[109px]" key={index}>
                             <Image src="/checkbox.png" unoptimized width={20} height={20} alt="checkbox-icon" />
                             <Text>{item?.title}</Text>
                         </div>
