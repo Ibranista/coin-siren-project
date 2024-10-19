@@ -17,7 +17,7 @@ export default function Navbar({ navContent }: { navContent: INavbar }) {
     const logoData = navbar?.[0];
     const logoSubLinkedData = navbar?.[1];
     const { title, subLinks } = logoSubLinkedData ?? {};
-
+    document.body.style.overflow = toggled ? "hidden" : "auto";
     return (
         <section>
             <nav className="flex justify-between items-center h-[60px] relative box-border px-4 max-w-[1201.5px] w-full mx-auto">
